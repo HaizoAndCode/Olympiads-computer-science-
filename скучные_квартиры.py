@@ -1,5 +1,7 @@
 n, k = int(input()), int(input())
-if (k % 11 == 0 and k < 100) or k % 111 == 0:
-    print(k // 100 + k // 10 % 10 + k % 10)
+a = str(k)
+ind = a[0]
+if a.count(ind) == len(a):
+    print(int(ind) * len(a))
 else:
     print(k)
